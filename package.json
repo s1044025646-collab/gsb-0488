@@ -1,0 +1,23 @@
+{
+  "name": "benford-local-backend",
+  "version": "1.0.0",
+  "description": "Windows-local Benford leading significant digit API and CLI",
+  "main": "dist/server.js",
+  "bin": {
+    "benford": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/server.js",
+    "test": "node --no-warnings --test dist/test/*.test.js",
+    "demo": "node --no-warnings dist/demo.js"
+  },
+  "keywords": ["benford", "sqlite", "typescript", "cli"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
