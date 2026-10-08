@@ -1,0 +1,25 @@
+{
+  "name": "benford-service",
+  "version": "1.0.0",
+  "description": "Benford 首位有效数字提取与样本口径核验后端",
+  "main": "dist/cli.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build:test && node --test \"dist-test/test/*.test.js\"",
+    "start": "node dist/server.js",
+    "demo": "node dist/cli.js demo",
+    "cli": "node dist/cli.js",
+    "build:test": "tsc -p tsconfig.test.json"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "benford": "dist/cli.js"
+  }
+}
